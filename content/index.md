@@ -1,13 +1,23 @@
 ---
-Title: Home
-Description: This is our index page.
+Title: Hem
+Description: Det här är min startsida för webbplatsen.
 ---
 
-Home page
+Min startsida i designkursen
 ==========================
 
-The source for this page is in `content/index.md`.
+### En presentation av mig
 
-This is a sample home page written in markdown with some frontmatter defined.
+Hej, mitt namn är Ann-Louise Hedman. Jag är uppväxen i en liten by, Hedträsk,
+5 mil från Skellefteå. I gymnasiet gick jag humanistisk linje,
+läste franska, tyska och spanska. Sen utbildade jag mig till lärare i svenska, spanska
+och svenska som andraspråk vid Umeå Universitet.
+<p>&nbsp;</p>
+Jag bor fortfarande i Skellefteåtraken, I Ersmark på landet. Jag arbetar deltid som lärare
+i en distanskurs för vuxna sfi-studenter och sedan studerar jag kurspaketet inom Webbprogrammering
+på 50%.
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+![me](%assets_url%/img/me_350x351.jpg)
 
-The pages make up a Anax site for demonstration purpose, it is something to start from.
+                      |

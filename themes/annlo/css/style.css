@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html, body {
+    font-family: "Nunito", sans-serif;
+    height: 100%;
+    background: #e4e4e4;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+.site-header {
+    flex: 0 0 auto;
+    background: #FF6600;
+    color: #2b2e30;
+    padding: 2em;
+}
+
+.site-header a {
+    color: #4054B2;
+}
+.site-header a:visited {
+    color: #cc2d6f;
+}
+
+/* Main */
+
+.main {
+    flex: 1 0 auto;
+    padding: 2em;
+}
+
+/* Container */
+.container {
+    width: 60%;
+    margin:auto;
+    background: #fff;
+    padding: 2em;
+    display: block;
+}
+
+/* Image of me */
+img[alt=me] {
+    width: 20%;
+    border: none;
+}
+
+/* Footer */
+
+.site-footer, .container-footer {
+    flex: 0 0 auto;
+    background: #0d0f20;
+    color: #F4F4F4;
+    padding: 2em;
+}
+
+.site-footer a {
+    color: #4054B2;
+}
+
+/* Font style and size */
+body {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+    color: #444;
+}
+
+p, li {
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* Responsive site and style for small devices */
+@media (max-width: 980px) {
+    body, .container, .flash-img, .site-header, .site-footer {
+        width: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    #nav {
+        clear: both;
+        padding: 0;
+    }
+    #nav ul {
+        padding-bottom: 1em;
+    }
+    #nav ul li {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+    #nav ul li a {
+        display: block;
+        padding: 0.5em 0;
+    }
+    .js #nav-toggle {
+        display: block;
+        float: right;
+        width: 2em;
+        margin: 0.6667em 0;
+        font-size: 1.5rem;
+        line-height: 2em;
+        text-align: center;
+        cursor: pointer;
+    }
+    .js #nav-toggle>* {
+        vertical-align: middle;
+    }
+    img  {
+        max-width: 100%;
+        display: block;
+    }
+}
