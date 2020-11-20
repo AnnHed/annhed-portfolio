@@ -4,5 +4,5 @@ Tagline: Min hemsida i designkursen.
 Social:
     - title: Link till mitt github repo.
       url: https://github.com/AnnHed/annhed-portfolio
-      icon: github
+      icon: fab fa-github
 ---
