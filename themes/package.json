@@ -7,8 +7,8 @@
     "lint": "stylelint \"**/*.scss\"",
     "watch": "sass annlotest/scss/style.scss annlotest/css/style.css --no-source-map --watch",
     "watch-min": "sass annlotest/scss/style.scss annlotest/css/style.min.css --no-source-map --style compressed --watch",
-    "style": "sass annlotest/scss/style.scss annlotest/css/style.css --no-source-map",
-    "style-min": "sass annlotest/scss/style.scss annlotest/css/style.min.css --no-source-map --style compressed"
+    "style": "sass hoodie/scss/style.scss hoodie/css/style.css --no-source-map",
+    "style-min": "sass hoodie/scss/style.scss hoodie/css/style.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",

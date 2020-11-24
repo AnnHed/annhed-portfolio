@@ -1,6 +1,7 @@
 ---
 Title: Hem
 Description: Det här är min startsida för webbplatsen.
+icon: fas fa-home
 ---
 
 Min startsida i designkursen

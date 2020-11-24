@@ -1,0 +1,31 @@
+.site-header {
+    background-color: $site-header-color;
+    padding: 20px;
+}
+
+.topnav {
+    background-color: #fff;
+    overflow: hidden;
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+    }
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: #000;
+
+    .topnav a:active {
+        background-color: #4caf50;
+        color: #fff;
+    }
+}
+
+.topnav ul {
+    list-style: none;
+    margin: 1em;
+    padding: 0;
+}
