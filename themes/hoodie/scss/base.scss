@@ -1,6 +1,7 @@
 @import '../../node_modules/normalize.css/normalize';
 @import 'variables';
 @import 'header';
+@import 'layout';
 @import 'footer';
 
 // Default styling for all elements on the page
@@ -17,7 +18,17 @@ h6 {
     font-family: 'Abril Fatface';
 }
 
-html,
+html {
+    font-size: 1.2em;
+}
+
 body {
-    background-color: $outside-color;
+    background-color: $site-color;
+    margin: 0;
+    padding: 0;
+}
+
+.about-main,
+.about-container {
+    background-color: $site-color;
 }

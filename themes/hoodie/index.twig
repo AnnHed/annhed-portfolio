@@ -20,29 +20,35 @@
 <!-- "Widescreen-mode" can be activated in portfolio/config/config.yml -->
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
     <header class="site-header">
-        <section>
-            <div class="topnav" id="topnav" role="navigation" tabindex="-1">
-                <ul>
-                    {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
-                    <li{% if page.id == current_page.id %} class="active" {% endif %}>
-                    <a href="{{ page.url }}">
-                        {% if page.meta.icon %}
-                        <i class="{{ page.meta.icon }}"></i>
-                        {% else %}
-                        {{ page.title }}
-                        {% endif %}
-                    </a>
-                    {% endfor %}
-                </li>
-            </ul>
-        </div>
-    </section>
     </header>
-    <div class="main" id="main" role="main">
-        <div class="container">
-            {{ content}}
-        </div>
+    <section>
+        <div class="topnav" id="topnav" role="navigation" tabindex="-1">
+            <ul>
+                {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
+                <li{% if page.id == current_page.id %} class="active" {% endif %}>
+                <a href="{{ page.url }}">
+                    {% if page.meta.icon %}
+                    <i class="{{ page.meta.icon }}"></i>
+                    {% else %}
+                    {{ page.title }}
+                    {% endif %}
+                </a>
+                {% endfor %}
+            </li>
+        </ul>
     </div>
+</section>
+<div class="main" id="main" role="main">
+    <article class="intro">
+        <div class="panel">
+            <img class="me-img" src="{{ base_url }}/image/me_350x351.jpg">
+        </div>
+        <section class="intro-content">
+            {{ content}}
+        </section>
+    </article>
+    </div>
+</div>
 <footer class="site-footer">
     <div class="container-footer">
         <p>Länk till AnnHed på Github</p>

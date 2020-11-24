@@ -680,39 +680,96 @@ template {
 
 /* White color inside elements */
 /* Light white-grey */
-/* brick-color */
+/* some white color*/
 /* black with a hint of blue */
 .site-header {
-  background-color: #b86336;
+  background-color: #fff;
+  opacity: 0.3;
   padding: 20px;
 }
 
 .topnav {
-  background-color: white;
+  background-color: #fcf9f9;
+  opacity: 0.8;
+  padding: 0.5rem 1rem;
   overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 .topnav .topnav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
+  text-decoration: none;
 }
-.topnav .topnav a .topnav a:hover {
+
+.topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: #000;
 }
-.topnav .topnav a .topnav a:hover .topnav a.active {
+.topnav a:hover .topnav a:active {
   background-color: #4caf50;
-  color: white;
+  color: #fff;
 }
 
-#topnav ul {
+.topnav ul {
+  display: inline-flex;
+  flex-wrap: wrap;
   list-style: none;
-  margin: 1em;
+  margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
-.site-footer {
-  background-color: black;
+.topnav li {
+  box-sizing: border-box;
+  padding: 14px 16px;
+  border-right: 1px #333;
+  text-decoration: none;
+}
+.topnav li .topnav li:last-child {
+  border-right: none;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  margin-top: 2rem;
+}
+
+.intro .panel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 8em);
+  grid-gap: 1px;
+  height: 100%;
+}
+
+.intro .panel .img:nth-child(1) {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.intro .panel .img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.intro-content {
+  padding: 2rem 2rem 2rem 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.site-footer,
+.site-container {
+  background-color: #0d0f20;
 }
 
 * {
@@ -728,14 +785,19 @@ h6 {
   font-family: "Abril Fatface";
 }
 
-html,
-body {
-  background-color: #e4e4e4;
+html {
+  fontsize: 1.2em;
 }
 
-site-header {
-  background-color: #b86336;
-  padding: 20px;
+body {
+  background-color: #fcf9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.about-main,
+.about-container {
+  background-color: #fcf9f9;
 }
 
 /* Font awesome in this order */
@@ -6860,16 +6922,3 @@ readers do not read off random characters that represent icons */
 /* Old stylesheet last */
 /* Define base color for alert here before import that outputs default color blue */
 /* Resten av min stylesheet */
-.about-main,
-.about-container {
-  background-color: #fff;
-}
-
-.site-header {
-  background-color: #b86336;
-}
-
-.site-footer,
-.site-container {
-  background-color: #0d0f20;
-}

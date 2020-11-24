@@ -19,6 +19,6 @@ i en distanskurs för vuxna sfi-studenter och sedan studerar jag kurspaketet ino
 på 50%.
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-![me](%assets_url%/img/me_350x351.jpg)
+
 
                       |
