@@ -1,0 +1,51 @@
+/* Responsive site and style for small devices */
+
+@media (max-width: 980px) {
+    body,
+    .container,
+    .site-header,
+    .site-footer {
+        width: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav {
+        clear: both;
+        padding: 0;
+    }
+
+    .topnav ul {
+        padding-bottom: 1em;
+    }
+
+    .topnav ul li {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .topnav ul li a {
+        display: block;
+        padding: 0.5em 0;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+}
+
+/* Test of fluid typography from CSS tricks */
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 22px;
+    }
+}
