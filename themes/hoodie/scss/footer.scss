@@ -1,4 +1,8 @@
 .site-footer,
-.site-container {
+.container-footer {
     background-color: $site-footer-color;
+    font-size: 90%;
+    color: $site-color;
+    padding: 2em;
+    flex: 0 0 auto;
 }
