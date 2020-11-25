@@ -3,10 +3,12 @@
 @import 'header';
 @import 'layout';
 @import 'footer';
+@import 'responsive';
 
 // Default styling for all elements on the page
 * {
-    font-family: 'Lato', sans-serif;
+    font-family: $font-stack;
+    box-sizing: border-box;
 }
 
 h1,
@@ -15,7 +17,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Abril Fatface';
+    font-family: $title-fonts;
+    color: $title-color;
 }
 
 html {
@@ -31,4 +34,12 @@ body {
 .about-main,
 .about-container {
     background-color: $site-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
 }

@@ -19,26 +19,22 @@
 </head>
 <!-- "Widescreen-mode" can be activated in portfolio/config/config.yml -->
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
-    <header class="site-header">
-        <section>
-            <div class="topnav" id="topnav" role="navigation" tabindex="-1">
-                <ul>
-                    {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
-                    <li{% if page.id == current_page.id %} class="active" {% endif %}>
-                    <a href="{{ page.url }}">
-                        {% if page.meta.icon %}
-                        <i class="{{ page.meta.icon }}"></i>
-                        {% else %}
-                        {{ page.title }}
-                        {% endif %}
-                    </a>
-                    {% endfor %}
-                </li>
-            </ul>
-        </div>
-        </section>
-    </header>
-    <div class="about-main" id="about-main" role="about-main">
+<header class="topnav" id="topnav" role="navigation" tabindex="-1">
+    <ul>
+        {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
+        <li{% if page.id == current_page.id %} class="active" {% endif %}>
+        <a href="{{ page.url }}">
+            {% if page.meta.icon %}
+            <i class="{{ page.meta.icon }}"></i>
+            {% else %}
+            {{ page.title }}
+            {% endif %}
+        </a>
+        {% endfor %}
+    </li>
+</ul>
+</header>
+<div class="about-main" id="about-main" role="about-main">
         <div class="about-container">
             {{ content}}
         </div>

@@ -1,5 +1,5 @@
 ---
-Logo: image/leaf_256x256.png
+Logo: fas fa-palette
 Tagline: Min hemsida i designkursen.
 Social:
     - title: Link till mitt github repo.

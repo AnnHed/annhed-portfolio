@@ -678,31 +678,20 @@ template {
   display: none;
 }
 
-/* White color inside elements */
-/* Light white-grey */
-/* some white color*/
-/* black with a hint of blue */
-.site-header {
-  background-color: #fff;
-  opacity: 0.3;
-  padding: 20px;
-}
-
 .topnav {
-  background-color: #fcf9f9;
-  opacity: 0.8;
   padding: 0.5rem 1rem;
+  border-bottom: 1px #694486;
   overflow: hidden;
-  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 700;
 }
-.topnav .topnav a {
+
+.topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #694486;
   text-align: center;
   text-decoration: none;
 }
@@ -711,7 +700,8 @@ template {
   background-color: #ddd;
   color: #000;
 }
-.topnav a:hover .topnav a:active {
+
+.topnav a:active {
   background-color: #4caf50;
   color: #fff;
 }
@@ -719,20 +709,18 @@ template {
 .topnav ul {
   display: inline-flex;
   flex-wrap: wrap;
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  text-decoration: none;
 }
 
 .topnav li {
   box-sizing: border-box;
   padding: 14px 16px;
-  border-right: 1px #333;
-  text-decoration: none;
+  border-right: 1px #694486;
 }
 .topnav li .topnav li:last-child {
-  border-right: none;
+  border-right: 0;
 }
 
 .intro {
@@ -772,8 +760,55 @@ template {
   background-color: #0d0f20;
 }
 
+/* Responsive site and style for small devices */
+@media (max-width: 980px) {
+  body,
+.container,
+.site-header,
+.site-footer {
+    width: auto;
+  }
+}
+@media (max-width: 767px) {
+  .nav {
+    clear: both;
+    padding: 0;
+  }
+
+  .topnav ul {
+    padding-bottom: 1em;
+  }
+
+  .topnav ul li {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .topnav ul li a {
+    display: block;
+    padding: 0.5em 0;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
+/* Test of fluid typography from CSS tricks */
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+}
 * {
   font-family: "Lato", sans-serif;
+  box-sizing: border-box;
 }
 
 h1,
@@ -782,11 +817,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Abril Fatface";
+  font-family: "Abril Fatface", sans-serif;
+  color: #694486;
 }
 
 html {
-  fontsize: 1.2em;
+  font-size: 1.2em;
 }
 
 body {
@@ -798,6 +834,14 @@ body {
 .about-main,
 .about-container {
   background-color: #fcf9f9;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /* Font awesome in this order */

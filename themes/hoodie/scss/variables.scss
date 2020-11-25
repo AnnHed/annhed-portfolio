@@ -1,10 +1,13 @@
 
-$font-stack: Lato, sans-serif;
-$inside-color: #fff; /* White color inside elements */
-$outside-color: #e4e4e4; /* Light white-grey */
-$site-color: #fcf9f9; /* some white color*/
-$site-footer-color: #0d0f20; /* black with a hint of blue */
+// Fonts and color in text
+$font-stack: 'Lato', sans-serif;
 
-$site-header-color: #00f !default; //blue
 
-// MArgin and padding zero
+// Fonts and color in titles
+$title-fonts: 'Abril Fatface', sans-serif;
+$title-color: #694486;
+
+// Theme colors
+$site-color: #fcf9f9;
+$accent-color: #694486;
+$site-footer-color: #0d0f20;

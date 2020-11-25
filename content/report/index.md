@@ -3,7 +3,7 @@ Title: Report
 Description: My report page
 ---
 
-Repodovisningssida för design
+Redovisningssida för design
 ==================
 
 * [kmom01](report/kmom01)
