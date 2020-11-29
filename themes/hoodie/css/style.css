@@ -678,90 +678,34 @@ template {
   display: none;
 }
 
-.topnav {
-  padding: 0.5rem 1rem;
-  border-bottom: 1px #694486;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-weight: 700;
-}
-
-.topnav a {
-  float: left;
-  color: #694486;
-  text-align: center;
-  text-decoration: none;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: #000;
-}
-
-.topnav a:active {
-  background-color: #4caf50;
-  color: #fff;
-}
-
-.topnav ul {
-  display: inline-flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.topnav li {
-  box-sizing: border-box;
-  padding: 14px 16px;
-  border-right: 1px #694486;
-}
-.topnav li .topnav li:last-child {
-  border-right: 0;
-}
-
-.intro {
-  display: grid;
-  grid-template-columns: 1.5fr 2fr;
-  margin-top: 2rem;
-}
-
-.intro .panel {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 8em);
-  grid-gap: 1px;
-  height: 100%;
-}
-
-.intro .panel .img:nth-child(1) {
-  grid-column: 1/3;
-  grid-row: 1/3;
-}
-
-.intro .panel .img {
-  height: 100%;
+/* Size attributes */
+/* Style for landing page with board and content*/
+.column-container {
+  display: table;
   width: 100%;
-  object-fit: cover;
+  min-height: calc(100vh - 15em);
 }
 
-.intro-content {
-  padding: 2rem 2rem 2rem 0;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+.board-column {
+  width: 50%;
+  float: right;
+  padding-top: 0.5em;
+  display: table-cell;
 }
 
-.site-footer,
-.container-footer {
-  background-color: #0d0f20;
-  font-size: 90%;
-  color: #fcf9f9;
-  padding: 2em;
-  flex: 0 0 auto;
+.content-column {
+  width: 50%;
+  float: left;
+  padding-top: 0.5em;
+  padding-left: 1em;
+  margin: 1em;
+  box-sizing: border-box;
+  display: table-cell;
+}
+
+.board-column,
+.content-column {
+  column-gap: 1em;
 }
 
 /* Responsive site and style for small devices */
@@ -799,6 +743,13 @@ template {
     display: block;
   }
 }
+/* The two columns stack on top of each other on smaller screens */
+@media (max-width: 767px) {
+  .content-column,
+.board-column {
+    width: 100%;
+  }
+}
 /* Test of fluid typography from CSS tricks */
 @media screen and (min-width: 320px) {
   html {
@@ -810,9 +761,90 @@ template {
     font-size: 22px;
   }
 }
+/* Images */
+.me-img,
+.website-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.topnav {
+  height: 5em;
+  padding: 1em;
+  background-color: #ffd32a;
+  flex: 0 0 auto;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 800;
+  clear: both;
+}
+
+.topnav a {
+  float: left;
+  color: #3f3f3f;
+  text-align: center;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.topnav a:active {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.topnav ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav li {
+  box-sizing: border-box;
+  padding: 14px 16px;
+  border-right: 1px #3f3f3f;
+}
+.topnav li .topnav li:last-child {
+  border-right: 0;
+}
+
+.test {
+  padding: 2em;
+  margin: 2em;
+}
+
+.site-footer .container-footer {
+  height: 10em;
+  background-color: #f53b57;
+  color: #ffffff;
+  display: block;
+  padding: 1.5em;
+  clear: both;
+}
+
+/* Footer paragraph */
+.read-more {
+  color: #3f3f3f;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.site-footer .social {
+  float: left;
+}
+
 * {
   font-family: "Lato", sans-serif;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
 }
 
 h1,
@@ -822,26 +854,12 @@ h4,
 h5,
 h6 {
   font-family: "Abril Fatface", sans-serif;
-  color: #694486;
+  color: #575fcf;
 }
 
-html {
+p {
   font-size: 1.2em;
-  height: 100%;
-}
-
-body {
-  background-color: #fcf9f9;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-.about-main,
-.about-container {
-  background-color: #fcf9f9;
-  display: flex;
-  flex-direction: column;
+  line-height: 1.4;
 }
 
 a {
@@ -852,8 +870,31 @@ ul {
   list-style-type: none;
 }
 
-footer {
-  display: block;
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+main {
+  min-height: 300px;
+}
+
+/* Test of Sass calculation */
+.me-img,
+.website-img {
+  width: 250px;
+  position: absolute;
+  left: calc(75% - 125px);
+  top: 0;
+  padding-top: 10em;
+  clear: both;
 }
 
 /* Font awesome in this order */

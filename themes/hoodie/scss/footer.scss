@@ -1,8 +1,21 @@
-.site-footer,
-.container-footer {
-    background-color: $site-footer-color;
-    font-size: 90%;
+.site-footer .container-footer {
+    height: 10em;
+    background-color: #f53b57;
     color: $site-color;
-    padding: 2em;
-    flex: 0 0 auto;
+    display: block;
+
+    padding: 1.5em;
+    clear: both;
+}
+
+
+/* Footer paragraph */
+.read-more {
+    color: $accent-color;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.site-footer .social {
+    float: left;
 }

@@ -1,32 +1,28 @@
-.intro {
-    display: grid;
-    grid-template-columns: 1.5fr 2fr;
-    margin-top: 2rem;
+/* Style for landing page with board and content*/
+.column-container {
+    display: table;
+    width: $hundred-percent;
+    min-height: calc(100vh - 15em);
 }
 
-.intro .panel {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 8em);
-    grid-gap: 1px;
-    height: 100%;
+.board-column {
+    width: 50%;
+    float: right;
+    padding-top: 0.5em;
+    display: table-cell;
 }
 
-.intro .panel .img:nth-child(1) {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
+.content-column {
+    width: 50%;
+    float: left;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    margin: 1em;
+    box-sizing: border-box;
+    display: table-cell;
 }
 
-.intro .panel .img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.intro-content {
-    padding: 2rem 2rem 2rem 0;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-
+.board-column,
+.content-column {
+    column-gap: 1em;
 }

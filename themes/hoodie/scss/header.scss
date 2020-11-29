@@ -1,12 +1,14 @@
 .topnav {
-    padding: 0.5rem 1rem;
-    border-bottom: 1px $accent-color;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
+    height: 5em;
+    padding: 1em;
+    background-color: #ffd32a;
+    // overflow: hidden;
+    // display: flex;
+    flex: 0 0 auto;
     text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 800;
+    clear:both;
 }
 
 .topnav a {
@@ -30,8 +32,8 @@
     display: inline-flex;
     flex-wrap: wrap;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: $zero;
+    padding: $zero;
 }
 
 .topnav li {
@@ -42,4 +44,9 @@
     .topnav li:last-child {
         border-right: 0;
     }
+}
+
+.test {
+    padding: 2em;
+    margin: 2em;
 }

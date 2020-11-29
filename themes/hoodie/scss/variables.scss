@@ -1,13 +1,22 @@
 
 // Fonts and color in text
 $font-stack: 'Lato', sans-serif;
+$font-size: 1.2em;
+$line: 1.4;
 
 
 // Fonts and color in titles
 $title-fonts: 'Abril Fatface', sans-serif;
-$title-color: #694486;
+$title-color: #3f3f3f;
+
+// Font layout
 
 // Theme colors
-$site-color: #fcf9f9;
-$accent-color: #694486;
-$site-footer-color: #0d0f20;
+$site-color: #ffffff;
+$accent-color: #3f3f3f;
+$nav-color: #202020;
+$site-footer-color: #ffdf66;
+
+/* Size attributes */
+$zero: 0;
+$hundred-percent: 100%;

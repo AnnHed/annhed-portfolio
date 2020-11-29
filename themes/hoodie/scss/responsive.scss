@@ -12,7 +12,7 @@
 @media (max-width: 767px) {
     .nav {
         clear: both;
-        padding: 0;
+        padding: $zero;
     }
 
     .topnav ul {
@@ -21,7 +21,7 @@
 
     .topnav ul li {
         display: block;
-        margin-left: 0;
+        margin-left: $zero;
         text-align: center;
     }
 
@@ -31,8 +31,16 @@
     }
 
     img {
-        max-width: 100%;
+        max-width: $hundred-percent;
         display: block;
+    }
+}
+/* The two columns stack on top of each other on smaller screens */
+
+@media (max-width: 767px) {
+    .content-column,
+    .board-column {
+        width: $hundred-percent;
     }
 }
 
@@ -48,4 +56,11 @@
     html {
         font-size: 22px;
     }
+}
+
+/* Images */
+.me-img,
+.website-img {
+    max-width: $hundred-percent;
+    height: auto;
 }

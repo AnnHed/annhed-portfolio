@@ -1,53 +1,37 @@
 @import '../../node_modules/normalize.css/normalize';
 @import 'variables';
-@import 'header';
 @import 'layout';
-@import 'footer';
 @import 'responsive';
+@import 'header';
+@import 'footer';
+@import 'typography';
 
 // Default styling for all elements on the page
-* {
-    font-family: $font-stack;
-    box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $title-fonts;
-    color: $title-color;
-}
 
 html {
-    font-size: 1.2em;
-    height: 100%;
+    box-sizing: border-box;
+    height: $hundred-percent;
 }
 
 body {
     background-color: $site-color;
-    margin: 0;
-    padding: 0;
-    height: 100%;
+    margin: $zero;
+    padding: $zero;
+    height: $hundred-percent;;
 }
 
-.about-main,
-.about-container {
-    background-color: $site-color;
-    display: flex;
-    flex-direction: column;
+main {
+    min-height: 300px;
 }
 
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-footer {
-    display: block;
+/* Test of Sass calculation */
+.me-img,
+.website-img {
+  $width: 250px;
+  width: $width;
+  position: absolute;
+  left: calc(75% - #{$width / 2});
+  top: 0;
+  padding-top: 10em;
+  clear: both;
 }
