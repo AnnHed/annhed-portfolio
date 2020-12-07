@@ -1,28 +1,32 @@
 /* Style for landing page with board and content*/
 .column-container {
-    display: table;
-    width: $hundred-percent;
+    width: 95%;
+    background-color: $container-background;
+    margin: auto;
+    padding: auto;
     min-height: calc(100vh - 15em);
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: $box-shadow;
+    margin-bottom: 1.6em;
+    // overflow: hidden;
+}
+
+.content-column {
+    padding-left: 2em;
+    padding-top: 2em;
+    flex: 50%;
+    box-sizing: border-box;
 }
 
 .board-column {
-    width: 50%;
-    float: right;
-    padding-top: 0.5em;
-    display: table-cell;
+    padding-top: 2em;
+    flex: 50%;
 }
 
-.content-column {
-    width: 50%;
-    float: left;
-    padding-top: 0.5em;
-    padding-left: 1em;
-    margin: 1em;
-    box-sizing: border-box;
-    display: table-cell;
-}
-
-.board-column,
-.content-column {
-    column-gap: 1em;
+/* Clear float after the columns */
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
 }

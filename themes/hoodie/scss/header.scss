@@ -1,49 +1,48 @@
 .topnav {
+    background-color: $navbar-color;
+    border-bottom: 4px solid $accent-color;
     height: 5em;
     padding: 1em;
-    background-color: #ffd32a;
-    // overflow: hidden;
-    // display: flex;
+    margin-bottom: 1.6em;
     flex: 0 0 auto;
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 800;
-    clear:both;
-}
-
-.topnav a {
-    float: left;
-    color: $accent-color;
-    text-align: center;
-    text-decoration: none;
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: #000;
-}
-
-.topnav a:active {
-    background-color: #4caf50;
-    color: #fff;
+    // box-shadow: $box-shadow;
+    clear: both;
 }
 
 .topnav ul {
-    display: inline-flex;
-    flex-wrap: wrap;
     list-style-type: none;
     margin: $zero;
     padding: $zero;
+    overflow: hidden;
 }
 
 .topnav li {
-    box-sizing: border-box;
-    padding: 14px 16px;
-    border-right: 1px $accent-color;
+    float: left;
+}
 
-    .topnav li:last-child {
-        border-right: 0;
+.topnav a {
+    color: $site-color;
+    text-decoration: none;
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: #000;
     }
+
+    .topnav a:active {
+        background-color: #4caf50;
+        color: #fff;
+    }
+}
+
+.topnav li,
+.topnav a {
+    display: block;
+    padding: 8px;
+    background-color: $navbar-color;
 }
 
 .test {

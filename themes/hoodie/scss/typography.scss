@@ -14,13 +14,21 @@ h4,
 h5,
 h6 {
     font-family: $title-fonts;
-    color: #575fcf;
+    color: $title-color;
+    letter-spacing: $letter-space;
+    margin-block-end: $block-end;
 
+    h1 {
+        letter-spacing: $big-letter-space;
+    }
 }
 
 p {
     font-size: $font-size;
     line-height: $line;
+    width: $line-length;
+    margin-block-start: $block-start;
+    margin-block-end: $block-end;
 }
 
 a {
@@ -29,4 +37,27 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+// Test smaller devices
+
+@media (max-width: 767px) {
+    h1,
+    h2 {
+        margin: $zero;
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.6;
+        width: $mobile-line-length;
+    }
+
+    .site-footer .social {
+        float: left;
+        padding: 0.5em 0 0.5em 0.2em;
+        font-size: 1.2rem;
+    }
+
 }

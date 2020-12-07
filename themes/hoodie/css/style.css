@@ -678,47 +678,52 @@ template {
   display: none;
 }
 
+/* Typography */
 /* Size attributes */
+/* Box Shadow for navbar and coulmn container */
 /* Style for landing page with board and content*/
 .column-container {
-  display: table;
-  width: 100%;
+  width: 95%;
+  background-color: #fff;
+  margin: auto;
+  padding: auto;
   min-height: calc(100vh - 15em);
+  display: flex;
+  flex-flow: row wrap;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 1.6em;
+}
+
+.content-column {
+  padding-left: 2em;
+  padding-top: 2em;
+  flex: 50%;
+  box-sizing: border-box;
 }
 
 .board-column {
-  width: 50%;
-  float: right;
-  padding-top: 0.5em;
-  display: table-cell;
+  padding-top: 2em;
+  flex: 50%;
 }
 
-.content-column {
-  width: 50%;
-  float: left;
-  padding-top: 0.5em;
-  padding-left: 1em;
-  margin: 1em;
-  box-sizing: border-box;
-  display: table-cell;
-}
-
-.board-column,
-.content-column {
-  column-gap: 1em;
+/* Clear float after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Responsive site and style for small devices */
 @media (max-width: 980px) {
   body,
-.container,
+.column-container,
 .site-header,
 .site-footer {
     width: auto;
   }
 }
 @media (max-width: 767px) {
-  .nav {
+  .topnav {
     clear: both;
     padding: 0;
   }
@@ -738,40 +743,30 @@ template {
     padding: 0.5em 0;
   }
 
-  img {
-    max-width: 100%;
-    display: block;
+  .topnav a {
+    text-transform: uppercase;
+    font-size: 0.6em;
   }
-}
-/* The two columns stack on top of each other on smaller screens */
-@media (max-width: 767px) {
-  .content-column,
-.board-column {
-    width: 100%;
-  }
-}
-/* Test of fluid typography from CSS tricks */
-@media screen and (min-width: 320px) {
-  html {
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-  }
-}
-@media screen and (min-width: 1000px) {
-  html {
-    font-size: 22px;
-  }
-}
-/* Images */
-.me-img,
-.website-img {
-  max-width: 100%;
-  height: auto;
-}
 
+  .board-column,
+.content-column {
+    flex: 100%;
+    padding: 0.5em;
+    margin: 0;
+  }
+
+  .me-img,
+.website-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 .topnav {
+  background-color: #245984;
+  border-bottom: 4px solid #2b85c6;
   height: 5em;
   padding: 1em;
-  background-color: #ffd32a;
+  margin-bottom: 1.6em;
   flex: 0 0 auto;
   text-transform: uppercase;
   font-size: 1rem;
@@ -779,38 +774,35 @@ template {
   clear: both;
 }
 
-.topnav a {
-  float: left;
-  color: #3f3f3f;
-  text-align: center;
-  text-decoration: none;
+.topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.topnav a:hover {
+.topnav li {
+  float: left;
+}
+
+.topnav a {
+  color: #e3d8c0;
+  text-decoration: none;
+}
+.topnav a .topnav a:hover {
   background-color: #ddd;
   color: #000;
 }
-
-.topnav a:active {
+.topnav a .topnav a:active {
   background-color: #4caf50;
   color: #fff;
 }
 
-.topnav ul {
-  display: inline-flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.topnav li {
-  box-sizing: border-box;
-  padding: 14px 16px;
-  border-right: 1px #3f3f3f;
-}
-.topnav li .topnav li:last-child {
-  border-right: 0;
+.topnav li,
+.topnav a {
+  display: block;
+  padding: 8px;
+  background-color: #245984;
 }
 
 .test {
@@ -818,24 +810,40 @@ template {
   margin: 2em;
 }
 
+.site-footer {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  box-sizing: border-box;
+}
+
 .site-footer .container-footer {
   height: 10em;
-  background-color: #f53b57;
-  color: #ffffff;
+  background-color: #4e575c;
+  color: #e3d8c0;
   display: block;
   padding: 1.5em;
   clear: both;
 }
 
+.container-footer {
+  overflow: hidden;
+}
+
+.site-footer a {
+  color: #2b85c6;
+}
+
 /* Footer paragraph */
 .read-more {
-  color: #3f3f3f;
+  padding: 0;
+  margin: 0;
+  color: #e3d8c0;
   font-size: 1.2em;
-  font-weight: bolder;
 }
 
 .site-footer .social {
   float: left;
+  padding: 1em 0 1em 0.5em;
+  font-size: 2rem;
 }
 
 * {
@@ -854,12 +862,25 @@ h4,
 h5,
 h6 {
   font-family: "Abril Fatface", sans-serif;
-  color: #575fcf;
+  color: #262626;
+  letter-spacing: 0.02em;
+  margin-block-end: 1em;
+}
+h1 h1,
+h2 h1,
+h3 h1,
+h4 h1,
+h5 h1,
+h6 h1 {
+  letter-spacing: 0.03em;
 }
 
 p {
   font-size: 1.2em;
-  line-height: 1.4;
+  line-height: 1.5;
+  width: 50ch;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 
 a {
@@ -870,31 +891,44 @@ ul {
   list-style-type: none;
 }
 
+@media (max-width: 767px) {
+  h1,
+h2 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+    width: 35ch;
+  }
+
+  .site-footer .social {
+    float: left;
+    padding: 0.5em 0 0.5em 0.2em;
+    font-size: 1.2rem;
+  }
+}
 html {
   box-sizing: border-box;
   height: 100%;
 }
 
 body {
-  background-color: #ffffff;
-  margin: 0;
+  background-color: #e3d8c0;
   padding: 0;
   height: 100%;
-}
-
-main {
-  min-height: 300px;
 }
 
 /* Test of Sass calculation */
 .me-img,
 .website-img {
-  width: 250px;
-  position: absolute;
-  left: calc(75% - 125px);
-  top: 0;
-  padding-top: 10em;
-  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Font awesome in this order */

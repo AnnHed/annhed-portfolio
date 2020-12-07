@@ -1,10 +1,12 @@
 ---
 Title: Report
 Description: My report page
+Template: report
 ---
 
 Redovisningssida för design
 ==================
+Här finns redovisningstexter för olika kursmoment i designkursen.
 
 * [kmom01](report/kmom01)
 * [kmom02](report/kmom02)

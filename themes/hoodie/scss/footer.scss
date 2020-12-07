@@ -1,21 +1,35 @@
+.site-footer {
+    box-shadow: $box-shadow;
+    box-sizing: border-box;
+}
+
 .site-footer .container-footer {
     height: 10em;
-    background-color: #f53b57;
+    background-color: $site-footer-color;
     color: $site-color;
     display: block;
-
     padding: 1.5em;
     clear: both;
 }
 
+.container-footer {
+    overflow: hidden;
+}
+
+.site-footer a {
+    color: $accent-color;
+}
 
 /* Footer paragraph */
 .read-more {
-    color: $accent-color;
-    font-size: 1.2em;
-    font-weight: bolder;
+    padding: $zero;
+    margin: $zero;
+    color: $site-color;
+    font-size: $font-size;
 }
 
 .site-footer .social {
     float: left;
+    padding: 1em 0 1em 0.5em;
+    font-size: 2rem;
 }
