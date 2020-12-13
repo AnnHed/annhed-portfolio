@@ -722,7 +722,7 @@ template {
     width: auto;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .topnav {
     clear: both;
     padding: 0;
@@ -748,17 +748,36 @@ template {
     font-size: 0.6em;
   }
 
+  .sidebar {
+    display: none !important;
+  }
+
   .board-column,
-.content-column {
+.content-column,
+.content {
     flex: 100%;
     padding: 0.5em;
     margin: 0;
   }
-
+}
+/* Images */
+@media (max-width: 768px) {
   .me-img,
-.website-img {
+.website-img,
+.avocado-img {
     max-width: 100%;
     height: auto;
+  }
+}
+/* Responisve report pages*/
+@media (min-width: 600px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .topnav {
@@ -808,6 +827,11 @@ template {
 .test {
   padding: 2em;
   margin: 2em;
+}
+
+.box-h3 {
+  color: #2b85c6;
+  padding: 1em 0 0 1em;
 }
 
 .site-footer {
@@ -913,8 +937,11 @@ h2 {
 /* Style for report page */
 .landingpage {
   display: grid;
+  max-width: 1200px;
+  margin-left: 5em;
   gap: 1em 1em;
   padding: 0 1em;
+  min-height: calc(100vh - 15em);
 }
 
 .landingpage h1 {
@@ -924,65 +951,76 @@ h2 {
 
 .kmom-box {
   background-color: #fff;
-  border: 1px solid #2b85c6;
+  border: 1px solid #c8c4bf;
   grid-column: span 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
 }
 
 .kmom-box.project {
   grid-column: span 3;
+  margin-bottom: 2em;
 }
 
 .p-box {
   width: 35ch;
+  margin-left: 0.5em;
 }
 
-@media (max-width: 767px) {
+.kmom-title {
+  color: #e3d8c0;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.title-box {
+  width: 100%;
+  background-color: #245984;
+}
+
+@media (max-width: 768px) {
   .landingpage h1,
 .kmom-box,
 .kmom-box.project {
     grid-column: span 4;
   }
+
+  .landingpage {
+    margin-left: 0.5em;
+  }
 }
 .wrapper {
-  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 1.6em;
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(minmax(100px, 1fr));
-  grid-gap: 10px;
+  grid-gap: 1rem;
+  min-height: calc(100vh - 15em);
 }
 
-.box {
-  background-color: #2b85c6;
-  color: #fff;
-  border-radius: 5px;
-  padding: 2px;
+.second {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1rem;
+  box-sizing: border-box;
 }
 
-.header {
-  grid-column: col 1/span 3;
-}
-
-.sidebar {
-  grid-column: col 1;
-  grid-row: row 2/span 2;
-}
-
-.content {
-  grid-column: col 2/span 2;
-  grid-row: row 2;
-}
-
-.image {
-  grid-column: col 3;
-  grid-row: auto/span 2;
-}
-
-.footer {
-  grid-column: col 1/span 3;
-  grid-row: row 6/span 3;
+.learn,
+.read {
+  padding: 10px;
+  margin: 1em;
+  font-family: "Lato", sans-serif;
+  color: #4e575c;
+  letter-spacing: 0.02em;
+  background-color: #e3d8c0;
+  box-sizing: border-box;
 }
 
 html {
@@ -994,6 +1032,13 @@ body {
   background-color: #e3d8c0;
   padding: 0;
   height: 100%;
+}
+
+.articles-img {
+  width: 120px;
+}
+.articles-img .website-img {
+  width: 200px;
 }
 
 /* Test of Sass calculation */

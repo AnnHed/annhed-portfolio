@@ -9,7 +9,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .topnav {
         clear: both;
         padding: $zero;
@@ -35,17 +35,34 @@
         font-size: 0.6em;
     }
 
+    .sidebar {
+        display: none !important;
+    }
+
     .board-column,
-    .content-column {
+    .content-column,
+    .content {
         flex: 100%;
         padding: 0.5em;
         margin: 0;
     }
+}
 
+/* Images */
+@media (max-width: 768px) {
     .me-img,
-    .website-img {
+    .website-img,
+    .avocado-img {
         max-width: 100%;
         height: auto;
     }
+}
 
+/* Responisve report pages*/
+@media (min-width: 600px) {
+    .wrapper { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+    .wrapper { grid-template-columns: repeat(3, 1fr); }
 }

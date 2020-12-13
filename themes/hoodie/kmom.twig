@@ -18,49 +18,53 @@
     <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
 </head>
 <!-- "Widescreen-mode" can be activated in portfolio/config/config.yml -->
+<body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
+<header class="topnav" id="topnav" role="navigation" tabindex="-1">
+    <ul>
+        {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
+        <li{% if page.id == current_page.id %} class="active" {% endif %}>
+        <a href="{{ page.url }}">
+            {% if page.meta.icon %}
+            <i class="{{ page.meta.icon }}"></i>
+            {% else %}
+            {{ page.title }}
+            {% endif %}
+        </a>
+        {% endfor %}
+    </li>
+</ul>
+</header>
 <div class="wrapper">
-    <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
-    <div class="box header">
-        <header class="topnav" id="topnav" role="navigation" tabindex="-1">
-            <ul>
-                {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
-                <li{% if page.id == current_page.id %} class="active" {% endif %}>
-                <a href="{{ page.url }}">
-                    {% if page.meta.icon %}
-                    <i class="{{ page.meta.icon }}"></i>
-                    {% else %}
-                    {{ page.title }}
-                    {% endif %}
-                </a>
+    <div class="box sidebar"><title>Sidebar</title>
+        <a href="kmom01"><h3 class="box-h3">Kmom01</h3></a>
+        <a href="kmom02"><h3 class="box-h3">Kmom02</h3></a>
+        <a href="kmom03"><h3 class="box-h3">Kmom03</h3></a>
+        <a href="kmom04"><h3 class="box-h3">Kmom04</h3></a>
+        <a href="kmom05"><h3 class="box-h3">Kmom05</h3></a>
+        <a href="kmom06"><h3 class="box-h3">Kmom06</h3></a>
+        <a href="kmom10"><h3 class="box-h3">Kmom10</h3></a>
+    </div>
+    <div class="box content">
+        {{ content}}
+    </div>
+</div>
+<div class="second">
+    <div class="box read"><h3>Lär mer</h3></div>
+    <div class="box illustration"><img class="articles-img" src="{{ base_url }}/image/online_articles.png" alt="read online"></div>
+    <div class="box learn"><h3>Läs mer</h3></div>
+</div>
+<footer class="site-footer">
+    <div class="container-footer">
+        <p class="read-more">Länkar</p>
+        <div class="social">
+            <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
+            {% for social in pages["_meta"].meta.social %}
+            <a href="{{ social.url }}" title="{{ social.title }}" role="button">
+                <i class="{{ social.icon }}" aria-hidden="true"></i>
+                <span class="sr-only">{{ social.title }}</span>
                 {% endfor %}
-            </li>
-        </ul>
-    </header>
-</div>
-<div class="box sidebar"><title>Sidebar</title>
-<a href="kmom01"><h3>Kmom01</h3></a>
-<a href="kmom02"><h3>Kmom02</h3></a>
-<a href="kmom03"><h3>Kmom03</h3></a>
-<a href="kmom04"><h3>Kmom04</h3></a>
-<a href="kmom05"><h3>Kmom05</h3></a>
-<a href="kmom06"><h3>Kmom06</h3></a>
-<a href="kmom10"><h3>Kmom10</h3></a>
-</div>
-<div class="box content">
-    {{ content}}
-</div>
-<div class="box image"><p>Bild</p></div>
-<footer class="box footer">
-    <div class="read-more"><p>Länkar</p></div>
-    <div class="box social">
-        <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
-        {% for social in pages["_meta"].meta.social %}
-        <a href="{{ social.url }}" title="{{ social.title }}" role="button">
-            <i class="{{ social.icon }}" aria-hidden="true"></i>
-            <span class="sr-only">{{ social.title }}</span>
-            {% endfor %}
+            </div>
         </div>
     </footer>
 </body>
-</div>
 </html>

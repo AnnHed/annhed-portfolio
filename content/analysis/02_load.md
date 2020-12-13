@@ -1,5 +1,5 @@
-Titel på rapporten
-=====================
+Titel på rapporten om laddningstid mm
+========================================
 
 Skriv en eller två rader om vad uppgiften handlar om.
 
@@ -27,7 +27,7 @@ Analys
 Sammanfatta ditt resultat i analysen och skriv om vilka de vanligaste förbättringsåtgärderna verkar vara för ditt urval av webbplatser.
 Rangordna dina webbplatser baserat på deras mätvärden och utse en vinnare i testet och kommentera resultatet.
 Bestäm en gräns för absolut laddningstid som du själv uppfattar som snabb eller långsam webbplats. Skriv en mening om hur ditt urval av
-webbplatser klarar ditt gränsvärde och hur du upplever webbplatsernas snabbhet, rent generellt, i ditt urval. 
+webbplatser klarar ditt gränsvärde och hur du upplever webbplatsernas snabbhet, rent generellt, i ditt urval.
 
 Referenser
 ----------------------

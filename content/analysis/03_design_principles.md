@@ -1,5 +1,5 @@
-Titel på rapporten
-=====================
+Titel på rapporten om design principer mm
+================================================
 
 Skriv en eller två rader om vad uppgiften handlar om.
 
@@ -32,7 +32,7 @@ Diskutera och analysera de resultat du fann. Skriv generellt om din studie. Kom 
 Analysera din egen sida utifrån punkt 4.2-4.5 (Webbplatsens design, gynnar designen webbplatsens mål och syfte, vilka designprincip/er kännetecknar webbplatsen och
 exemplifiera samt designelement som använts, designprincipernas likhet/olikheter för framsidan och undersidor och kommentera).
 Finns det uppdaterinagr du kan göra på din sida utifrån vad du märkt av under din analys?
-Notera uppdaterinagr du gör eller väljer att inte göra. 
+Notera uppdaterinagr du gör eller väljer att inte göra.
 
 Referenser
 ----------------------

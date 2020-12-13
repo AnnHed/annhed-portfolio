@@ -9,19 +9,19 @@ Kursmoment 4
 
 ###Kommentera kort om skrivuppgiften
 
-jsjs kslajsklajlk jskaljasl
+Textstycke
 
 ###Färgschema till ditt tema och hur du valde att använda färgerna
 
-Jajajajaj
+Textstycke
 
 ###Accentfärg
 
-jojojojojo
+Textstycke
 
 ###Lösning av Dark theme
 
-Mkakdakad kooaaka
+Textstycke
 
-###Til för kmom04
-saj jdajdj jajda
+###Til för Design kmom04
+Textstycke

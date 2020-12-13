@@ -9,15 +9,16 @@ Kursmoment 5
 
 ###Erfarenheter av undersökning om laddningstid
 
-jsjs kslajsklajlk jskaljasl
+Textstycke
 
 ###Cimage och bildverktyg
 
-Jajajajaj
+Textstycke
 
 ###Bilder för webben och bildbehandling
 
-jojojojojo
+Textstycke
 
-###Til för kmom05
-saj jdajdj jajda
+###Til för Design kmom05
+
+Textstycke

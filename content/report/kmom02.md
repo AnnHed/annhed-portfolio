@@ -37,5 +37,5 @@ Så det blev en två-kolumns-layout där jag har försökt använda flexbox.
 Jag har delat upp koden i följande moduler: _*base*_, _*variables*_, _*layout*_, _*responsive*_, _*header*_, _*footer*_ och __*typography*_. Än så länge är jag nöjd med
 denna uppdelning, men det kan komma nya moduler framöver.  
 
-###TIL för Kmom02
+###TIL för Design Kmom02
 Förra TIL handlade om Github. Där känner jag att jag har pushat och taggat under tiden jag jobbar, så det tog jag till mig. Jag vill lära mig fler funktioner för uträkningar i SASS för att komma undan att jag upprepar mig och också styra saker med mer finess. Jag är glad att jag fick koll över flödet mellan den uppdelade koden och de olika twig-filerna. Jag hade svårt att se vad som höll ihop allt, därför gjorde jag ett helt nytt tema för att från grunden se att jag hade koll på de delarna själv. Det är jag mest nöjd med!

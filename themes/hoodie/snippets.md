@@ -11,3 +11,27 @@
   <div>Four</div>
   <div>Five</div>
 </div>
+
+/* Code before last attempt 11 dec late at night */
+
+.sidebar {
+    grid-column: col;
+    grid-row: row 2 ;
+}
+
+.content {
+    grid-column: col 2 / span  3;
+    grid-row: row 2;
+}
+
+.image {
+    grid-column: col / span 2;
+    grid-row: row 3;
+}
+
+.funny {
+    grid-column: col 3 / span 2 ;
+    grid-row: row ;
+}
+
+<!-- <p>&nbsp;</p> -->

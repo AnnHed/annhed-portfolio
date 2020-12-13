@@ -1,5 +1,5 @@
-Titel på rapporten
-=====================
+Titel på rapporten om färger
+===============================
 
 Skriv en eller två rader om vad uppgiften handlar om.
 
@@ -31,4 +31,4 @@ Ange eventuella referenser du använder dig av, om några.
 Övrigt
 ------------------------
 
-Skriv ditt eget namn samt vilka gruppmedlemmar som deltog i att författa rapporten. 
+Skriv ditt eget namn samt vilka gruppmedlemmar som deltog i att författa rapporten.

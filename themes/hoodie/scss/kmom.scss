@@ -1,44 +1,40 @@
 .wrapper {
-    margin: 20px;
+    background-color: $container-background;
+    box-shadow: $box-shadow;
+    margin-bottom: 1.6em;
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(minmax(100px, 1fr));
-    grid-gap: 10px;
+    grid-gap: 1rem;
+    min-height: calc(100vh - 15em);
 }
 
-.box {
-    background-color: $accent-color;
-    color: #fff;
-    border-radius: 5px;
-    padding: 2px;
-}
-
-.header {
-    grid-column: col 1 / span 3;
-}
-
-.sidebar {
-    grid-column: col 1;
-    grid-row: row 2 / span 2;
-}
-
-.content {
-    grid-column: col 2 / span 2;
-    grid-row: row 2;
-}
-
-.image {
-    grid-column: col 3;
-    grid-row: auto /span 2;
-}
-
-.footer {
-    grid-column: col 1 / span 3;
-    grid-row: row 6 / span 3;
-}
-
-// .social {
-//     grid-column-start: 4;
-//     grid-column-end: 4;
-//     grid-row-start: 4;
-//     grid-row-end: 5;
+// .bunny,
+// .funny {
+//
 // }
+
+.second {
+    // box-shadow: $box-shadow;
+    // margin: 0 auto;
+    // height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+    box-sizing: border-box;
+}
+
+.learn,
+.read {
+    padding: 10px;
+    margin: 1em;
+    font-family: $font-stack;
+    color: $site-footer-color;
+    letter-spacing: $letter-space;
+    background-color: $site-color;
+    // border: 2px solid rgba(111,41,97,.5);
+    box-sizing: border-box;
+}

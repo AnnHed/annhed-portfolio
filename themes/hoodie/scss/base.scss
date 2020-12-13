@@ -23,6 +23,14 @@ body {
     height: $hundred-percent;
 }
 
+.articles-img {
+    width: 120px;
+
+    .website-img {
+        width: 200px;
+    }
+}
+
 /* Test of Sass calculation */
 .me-img,
 .website-img {

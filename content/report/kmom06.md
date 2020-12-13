@@ -9,19 +9,20 @@ Kursmoment 6
 
 ###Designelement och designprinciper
 
-jsjs kslajsklajlk jskaljasl
+Textstycke
 
 ###Reflektion: Utvärdera designprinciper som webbplatser använder sig av
 
-Jajajajaj
+Textstycke
 
 ###Uppdateringar till egna sidan
 
-jojojojojo
+Textstycke
 
 ###Uppfattning om "the final touch"
 
-Mkakdakad kooaaka
+Textstycke
 
-###Til för kmom06
-saj jdajdj jajda
+###Til för Design kmom06
+
+Textstycke
