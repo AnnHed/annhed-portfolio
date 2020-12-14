@@ -5,10 +5,14 @@
   "main": "index.js",
   "scripts": {
     "lint": "stylelint \"**/*.scss\"",
-    "watch": "sass hoodie/scss/style.scss hoodie/css/style.css --no-source-map --watch",
-    "watch-min": "sass hoodie/scss/style.scss hoodie/css/style.min.css --no-source-map --style compressed --watch",
-    "style": "sass hoodie/scss/style.scss hoodie/css/style.css --no-source-map",
-    "style-min": "sass hoodie/scss/style.scss hoodie/css/style.min.css --no-source-map --style compressed"
+    "watch": "sass hoodie/scss/style.scss:hoodie/css/style.css hoodie/scss/style-dark.scss:hoodie/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass hoodie/scss/style.scss:hoodie/css/style.min.css hoodie/scss/style-dark.scss:hoodie/css/style-dark.min.css --no-source-map --watch --style compressed",
+    "style": "npm run style-light && npm run style-dark",
+    "style-min": "npm run style-light-min && npm run style-dark-min",
+    "style-light": "sass hoodie/scss/style.scss hoodie/css/style.css --no-source-map",
+    "style-light-min": "sass hoodie/scss/style.scss hoodie/css/style.min.css --no-source-map --style compressed",
+    "style-dark": "sass hoodie/scss/style-dark.scss hoodie/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass hoodie/scss/style-dark.scss hoodie/css/style-dark.min.css --no-source-map --style compressed"
   },
   "keywords": [],
   "author": "",

@@ -6461,6 +6461,160 @@ readers do not read off random characters that represent icons */
 /* Typography */
 /* Size attributes */
 /* Box Shadow for navbar and coulmn container */
+* {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Abril Fatface", sans-serif;
+  color: #262626;
+  letter-spacing: 0.02em;
+  margin-block-end: 1em;
+}
+h1 h1,
+h2 h1,
+h3 h1,
+h4 h1,
+h5 h1,
+h6 h1 {
+  letter-spacing: 0.03em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  width: 50ch;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media (max-width: 767px) {
+  h1,
+h2 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+    width: 35ch;
+  }
+
+  .site-footer .social {
+    float: left;
+    padding: 0.5em 0 0.5em 0.2em;
+    font-size: 1.2rem;
+  }
+}
+.topnav {
+  background-color: #245984;
+  border-bottom: 4px solid #2b85c6;
+  height: 5em;
+  padding: 1em;
+  margin-bottom: 1.6em;
+  flex: 0 0 auto;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 800;
+  clear: both;
+}
+
+.topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.topnav li {
+  float: left;
+}
+
+.topnav a {
+  color: #121212;
+  text-decoration: none;
+}
+.topnav a .topnav a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+.topnav a .topnav a:active {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.topnav li,
+.topnav a {
+  display: block;
+  padding: 8px;
+  background-color: #245984;
+}
+
+.test {
+  padding: 2em;
+  margin: 2em;
+}
+
+.box-h3 {
+  color: #2b85c6;
+  padding: 1em 0 0 1em;
+}
+
+.site-footer {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  box-sizing: border-box;
+}
+
+.site-footer .container-footer {
+  height: 10em;
+  background-color: #4e575c;
+  color: #121212;
+  display: block;
+  padding: 1.5em;
+  clear: both;
+}
+
+.container-footer {
+  overflow: hidden;
+}
+
+.site-footer a {
+  color: #2b85c6;
+}
+
+/* Footer paragraph */
+.read-more {
+  padding: 0;
+  margin: 0;
+  color: #121212;
+  font-size: 1.2em;
+}
+
+.site-footer .social {
+  float: left;
+  padding: 1em 0 1em 0.5em;
+  font-size: 2rem;
+}
+
 /* Style for landing page with board and content*/
 .column-container {
   width: 95%;
@@ -6560,160 +6714,6 @@ readers do not read off random characters that represent icons */
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.topnav {
-  background-color: #245984;
-  border-bottom: 4px solid #2b85c6;
-  height: 5em;
-  padding: 1em;
-  margin-bottom: 1.6em;
-  flex: 0 0 auto;
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 800;
-  clear: both;
-}
-
-.topnav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.topnav li {
-  float: left;
-}
-
-.topnav a {
-  color: #e3d8c0;
-  text-decoration: none;
-}
-.topnav a .topnav a:hover {
-  background-color: #ddd;
-  color: #000;
-}
-.topnav a .topnav a:active {
-  background-color: #4caf50;
-  color: #fff;
-}
-
-.topnav li,
-.topnav a {
-  display: block;
-  padding: 8px;
-  background-color: #245984;
-}
-
-.test {
-  padding: 2em;
-  margin: 2em;
-}
-
-.box-h3 {
-  color: #2b85c6;
-  padding: 1em 0 0 1em;
-}
-
-.site-footer {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  box-sizing: border-box;
-}
-
-.site-footer .container-footer {
-  height: 10em;
-  background-color: #4e575c;
-  color: #e3d8c0;
-  display: block;
-  padding: 1.5em;
-  clear: both;
-}
-
-.container-footer {
-  overflow: hidden;
-}
-
-.site-footer a {
-  color: #2b85c6;
-}
-
-/* Footer paragraph */
-.read-more {
-  padding: 0;
-  margin: 0;
-  color: #e3d8c0;
-  font-size: 1.2em;
-}
-
-.site-footer .social {
-  float: left;
-  padding: 1em 0 1em 0.5em;
-  font-size: 2rem;
-}
-
-* {
-  font-family: "Lato", sans-serif;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Abril Fatface", sans-serif;
-  color: #262626;
-  letter-spacing: 0.02em;
-  margin-block-end: 1em;
-}
-h1 h1,
-h2 h1,
-h3 h1,
-h4 h1,
-h5 h1,
-h6 h1 {
-  letter-spacing: 0.03em;
-}
-
-p {
-  font-size: 1.2em;
-  line-height: 1.5;
-  width: 50ch;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
-}
-
-@media (max-width: 767px) {
-  h1,
-h2 {
-    margin: 0;
-    font-size: 1.2em;
-  }
-
-  p {
-    font-size: 1em;
-    line-height: 1.6;
-    width: 35ch;
-  }
-
-  .site-footer .social {
-    float: left;
-    padding: 0.5em 0 0.5em 0.2em;
-    font-size: 1.2rem;
-  }
-}
 /* Style for report page */
 .landingpage {
   display: grid;
@@ -6749,7 +6749,7 @@ h2 {
 }
 
 .kmom-title {
-  color: #e3d8c0;
+  color: #121212;
   text-transform: capitalize;
   text-align: center;
   letter-spacing: 0.02em;
@@ -6799,7 +6799,7 @@ h2 {
   font-family: "Lato", sans-serif;
   color: #4e575c;
   letter-spacing: 0.02em;
-  background-color: #e3d8c0;
+  background-color: #121212;
   box-sizing: border-box;
 }
 
@@ -6809,7 +6809,7 @@ html {
 }
 
 body {
-  background-color: #e3d8c0;
+  background-color: #121212;
   padding: 0;
   height: 100%;
 }

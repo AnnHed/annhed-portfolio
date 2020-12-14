@@ -1,13 +1,12 @@
 @import 'common';
-
-
-@import 'variables';
-@import 'layout';
-@import 'responsive';
+@import 'variables-dark';
+@import 'typography';
+// @import 'variables';
 @import 'header';
 @import 'sidebar';
 @import 'footer';
-@import 'typography';
+@import 'layout';
+@import 'responsive';
 @import 'report';
 @import 'kmom';
 
@@ -15,14 +14,14 @@
 
 html {
     box-sizing: border-box;
-    height: $hundred-percent;
+    height: 100%;
 }
 
 body {
     background-color: $site-color;
     // margin: 1.6em;
-    padding: $zero;
-    height: $hundred-percent;
+    padding: 0;
+    height: 100%;
 }
 
 .articles-img {
@@ -49,3 +48,8 @@ body {
     // padding-top: 10em;
     // clear: both;
 }
+
+// /* Längst ner i min style-dark.scss */
+// .main {
+//     background-color: yellow;
+// }

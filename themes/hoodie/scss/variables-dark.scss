@@ -1,0 +1,35 @@
+
+/* Typography */
+$font-stack: 'Lato', sans-serif;
+$font-size: 1.2em;
+$line: 1.5;
+$letter-space: 0.02em;
+$big-letter-space: 0.03em;
+$line-length: 50ch;
+$mobile-line-length: 35ch;
+$block-start: 1em;
+$block-end: 1em;
+
+
+// Fonts and color in titles
+$title-fonts: 'Abril Fatface', sans-serif;
+$title-color: #262626;
+
+// Font layout
+
+// Theme colors
+$site-color: #121212; // beige
+$container-background: #fff;
+$accent-color: #2b85c6; //jeans blue
+$navbar-color: #245984; // darker blue
+$site-footer-color: #4e575c; // medium gray
+$light-gray: #c8c4bf;
+
+
+
+/* Size attributes */
+$zero: 0;
+$hundred-percent: 100%;
+
+/* Box Shadow for navbar and coulmn container */
+$box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);

@@ -1,0 +1,9 @@
+@import '../../node_modules/normalize.css/normalize';
+
+/* Font awesome in this order */
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital@1&display=swap');

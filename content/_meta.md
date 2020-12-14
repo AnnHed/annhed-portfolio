@@ -14,4 +14,10 @@ Social:
     - title: Link till Freecodecamp typography
       url: https://www.freecodecamp.org/news/tag/typography/
       icon: fab fa-free-code-camp
+    - title: Dark Mode
+      url: ?action=theme
+      icon: fas fa-moon
+    - title: Destroy session
+      url: ?action=session_destroy
+      icon: fas fa-trash
 ---
