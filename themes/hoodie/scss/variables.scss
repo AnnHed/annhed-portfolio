@@ -13,18 +13,17 @@ $block-end: 1em;
 
 // Fonts and color in titles
 $title-fonts: 'Abril Fatface', sans-serif;
-$title-color: #262626;
+$title-color: #023373; //same as dark accent
 
 // Font layout
 
 // Theme colors
-$site-color: #e3d8c0; // beige
+$accent-color: #e3d8c0;// beige
 $container-background: #fff;
-$accent-color: #2b85c6; //jeans blue
-$navbar-color: #245984; // darker blue
-$site-footer-color: #4e575c; // medium gray
-$light-gray: #c8c4bf; 
-
+$dark-accent: #023373; // same as title color
+$navbar-color: #245984; // bluish
+$site-footer-color: #4e575c; //darker gray
+$light-gray: #c8c4bf;
 
 
 /* Size attributes */

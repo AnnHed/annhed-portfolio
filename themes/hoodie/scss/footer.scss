@@ -6,7 +6,7 @@
 .site-footer .container-footer {
     height: 10em;
     background-color: $site-footer-color;
-    color: $site-color;
+    color: $accent-color;
     display: block;
     padding: 1.5em;
     clear: both;
@@ -24,7 +24,7 @@
 .read-more {
     padding: $zero;
     margin: $zero;
-    color: $site-color;
+    color: $accent-color;
     font-size: $font-size;
 }
 

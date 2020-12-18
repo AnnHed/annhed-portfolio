@@ -24,12 +24,62 @@ body {
     height: 100%;
 }
 
+h1 {
+    color: #fff;
+}
+
+p {
+    font-size: $font-size;
+    color: $darker-text;
+    font-weight: $less-weight;
+    line-height: $line;
+    width: $line-length;
+    margin-block-start: $block-start;
+    margin-block-end: $block-end;
+}
+
+.topnav {
+    border-bottom: 2px solid $dark-border;
+}
+
+.topnav a {
+    font-family: $font-stack; //same as text
+    font-weight: 750;
+    color: $dark-accent-color;
+}
+
+// Wrapper and container
+.column-container,
+.wrapper {
+    background-color: $container-background;
+}
+
 .articles-img {
     width: 120px;
 
     .website-img {
         width: 200px;
     }
+}
+
+// Report landing landingpage
+.kmom-box {
+    border: 1px solid $dark-border;
+    background-color: $site-color;
+}
+
+.kmom-title,
+.title-box {
+    color: $dark-accent-color;
+    font-weight: $less-weight;
+    background-color: $site-color;
+}
+
+// Sidebar kmompages
+
+.box-h3 {
+    color: $dark-accent-color;
+    padding: 1em 0 0 1em;
 }
 
 /* Test of Sass calculation */
@@ -40,6 +90,7 @@ body {
     margin-right: auto;
     max-width: 100%;
     height: auto;
+    filter: grayscale(70%);
     // $width: 200px;
     // width: $width;
     // position: absolute;
@@ -49,7 +100,10 @@ body {
     // clear: both;
 }
 
-// /* Längst ner i min style-dark.scss */
-// .main {
-//     background-color: yellow;
-// }
+.articles-img {
+    filter: grayscale(70%);
+}
+
+.site-footer a {
+    color: $dark-accent-color;
+}

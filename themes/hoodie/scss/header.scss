@@ -1,6 +1,6 @@
 .topnav {
     background-color: $navbar-color;
-    border-bottom: 4px solid $accent-color;
+    border-bottom: 2px solid #023373;
     height: 5em;
     padding: 1em;
     margin-bottom: 1.6em;
@@ -24,7 +24,7 @@
 }
 
 .topnav a {
-    color: $site-color;
+    color: $accent-color;
     text-decoration: none;
 
     .topnav a:hover {

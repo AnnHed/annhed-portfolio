@@ -6562,7 +6562,7 @@ readers do not read off random characters that represent icons */
 }
 .topnav {
   background-color: #245984;
-  border-bottom: 4px solid #2b85c6;
+  border-bottom: 2px solid #023373;
   height: 5em;
   padding: 1em;
   margin-bottom: 1.6em;
@@ -6610,7 +6610,7 @@ readers do not read off random characters that represent icons */
 }
 
 .box-h3 {
-  color: #2b85c6;
+  color: #023373;
   padding: 1em 0 0 1em;
 }
 
@@ -6633,7 +6633,7 @@ readers do not read off random characters that represent icons */
 }
 
 .site-footer a {
-  color: #2b85c6;
+  color: #e3d8c0;
 }
 
 /* Footer paragraph */
@@ -6666,7 +6666,7 @@ h4,
 h5,
 h6 {
   font-family: "Abril Fatface", sans-serif;
-  color: #262626;
+  color: #023373;
   letter-spacing: 0.02em;
   margin-block-end: 1em;
 }
@@ -6796,10 +6796,6 @@ h2 {
 .read {
   padding: 10px;
   margin: 1em;
-  font-family: "Lato", sans-serif;
-  color: #4e575c;
-  letter-spacing: 0.02em;
-  background-color: #e3d8c0;
   box-sizing: border-box;
 }
 
