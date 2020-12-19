@@ -1,17 +1,17 @@
 @import 'common';
+
+
 @import 'variables-dark';
-@import 'typography';
-// @import 'variables';
+@import 'layout';
+@import 'responsive-dark';
 @import 'header';
 @import 'sidebar';
 @import 'footer';
-@import 'layout';
-@import 'responsive';
+@import 'typography-dark';
 @import 'report';
 @import 'kmom';
 
 // Default styling for all elements on the page
-
 html {
     box-sizing: border-box;
     height: 100%;
@@ -24,27 +24,13 @@ body {
     height: 100%;
 }
 
-h1 {
-    color: #fff;
-}
-
-p {
-    font-size: $font-size;
-    color: $darker-text;
-    font-weight: $less-weight;
-    line-height: $line;
-    width: $line-length;
-    margin-block-start: $block-start;
-    margin-block-end: $block-end;
-}
-
 .topnav {
     border-bottom: 2px solid $dark-border;
 }
 
 .topnav a {
     font-family: $font-stack; //same as text
-    font-weight: 750;
+    // font-weight: 750;
     color: $dark-accent-color;
 }
 
@@ -73,13 +59,6 @@ p {
     color: $dark-accent-color;
     font-weight: $less-weight;
     background-color: $site-color;
-}
-
-// Sidebar kmompages
-
-.box-h3 {
-    color: $dark-accent-color;
-    padding: 1em 0 0 1em;
 }
 
 /* Test of Sass calculation */

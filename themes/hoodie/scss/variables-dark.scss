@@ -11,31 +11,28 @@ $mobile-line-length: 35ch;
 $block-start: 1em;
 $block-end: 1em;
 
-
 // Fonts and color in titles
 $title-fonts: 'Abril Fatface', sans-serif;
 $title-color: #262626;
 $darker-text: rgba(250, 249, 247, 0.87);
-
+$darkest-text: rgba(250, 249, 247, 0.6);
 
 // Theme colors
-$site-color: #27241d; // darkest 900
-$container-background: rgba(42, 41, 34, 0.87); // 87% of color maire
-$accent-color: #fae4fc;//#f3e5f5; // purple 50
-$dark-accent-color: rgba(233, 141, 245, 0.87);//#e98df5 purple 200
-$navbar-color: #27241d;//#423d33; //800
-$site-footer-color: #27241d; // same as site color
+$site-color: #27241d;
+$container-background: rgba(42, 41, 34, 0.87);
+$accent-color: #fae4fc;
+$dark-accent-color: rgba(233, 141, 245, 0.87);
+$navbar-color: #27241d; // same as site color
+$site-footer-color: #27241d; // same as site color and navbar
 $light-gray: #c8c4bf;
 
 // Other attributes
 
-$dark-border: #625d52;
-//rgba(39,36,29, 0.87)
-
+$dark-border: #423d33;
 
 /* Size attributes */
 $zero: 0;
 $hundred-percent: 100%;
 
 /* Box Shadow for navbar and coulmn container */
-$box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+$box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4), 0 3px 10px 0 rgba(0, 0, 0, 0.38);

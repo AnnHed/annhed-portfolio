@@ -35,3 +35,7 @@
 }
 
 <!-- <p>&nbsp;</p> -->
+
+<!-- //    @include breakpoint(papa-bear) { width: 60%; }
+//    @include breakpoint(mama-bear) { width: 80%; }
+//    @include breakpoint(baby-bear) { width: 95%; } -->

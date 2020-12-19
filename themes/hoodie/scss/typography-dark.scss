@@ -1,0 +1,64 @@
+* {
+    font-family: $font-stack;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $hundred-percent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $darkest-text;
+    font-family: $title-fonts;
+    font-weight: $less-weight;
+    letter-spacing: $letter-space;
+    margin-block-end: $block-end;
+
+    h1 {
+        letter-spacing: $big-letter-space;
+    }
+}
+
+h1,
+h2 {
+    @include breakpoint(baby-bear) {
+        margin: $zero;
+        font-size: 1.2em;
+    }
+}
+
+p {
+    font-size: $font-size;
+    color: $darker-text;
+    font-weight: $less-weight;
+    line-height: $line;
+    width: $line-length;
+    margin-block-start: $block-start;
+    margin-block-end: $block-end;
+
+    @include breakpoint(baby-bear) {
+        font-size: 1em;
+        line-height: 1.6;
+        width: $mobile-line-length;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+// Sidebar kmompages
+
+.box-h3 {
+    color: $dark-accent-color;
+    padding: 1em 0 0 1em;
+}

@@ -6461,68 +6461,76 @@ readers do not read off random characters that represent icons */
 /* Typography */
 /* Size attributes */
 /* Box Shadow for navbar and coulmn container */
-* {
-  font-family: "Lato", sans-serif;
+/* Style for landing page with board and content*/
+.column-container {
+  width: 95%;
+  background-color: rgba(42, 41, 34, 0.87);
+  margin: auto;
+  padding: auto;
+  min-height: calc(100vh - 15em);
+  display: flex;
+  flex-flow: row wrap;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4), 0 3px 10px 0 rgba(0, 0, 0, 0.38);
+  margin-bottom: 1.6em;
+}
+
+.content-column {
+  padding-left: 2em;
+  padding-top: 2em;
+  flex: 50%;
   box-sizing: border-box;
 }
 
-html {
-  font-size: 100%;
+.board-column {
+  padding-top: 2em;
+  flex: 50%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Abril Fatface", sans-serif;
-  color: #262626;
-  letter-spacing: 0.02em;
-  margin-block-end: 1em;
-}
-h1 h1,
-h2 h1,
-h3 h1,
-h4 h1,
-h5 h1,
-h6 h1 {
-  letter-spacing: 0.03em;
+/* Clear float after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-p {
-  font-size: 1.2em;
-  line-height: 1.5;
-  width: 50ch;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
-}
-
-@media (max-width: 767px) {
-  h1,
-h2 {
-    margin: 0;
-    font-size: 1.2em;
+/* Top navbar */
+@media (max-width: 768px) {
+  .topnav {
+    clear: both;
+    padding: 0;
   }
 
-  p {
-    font-size: 1em;
-    line-height: 1.6;
-    width: 35ch;
+  .topnav ul {
+    padding-bottom: 1em;
   }
 
-  .site-footer .social {
-    float: left;
-    padding: 0.5em 0 0.5em 0.2em;
-    font-size: 1.2rem;
+  .topnav ul li {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .topnav ul li a {
+    display: block;
+    padding: 0.5em 0;
+  }
+
+  .topnav a {
+    text-transform: uppercase;
+    font-size: 0.6em;
+  }
+
+  .sidebar {
+    display: none !important;
+  }
+}
+/* Images */
+@media (max-width: 768px) {
+  .me-img,
+.website-img,
+.avocado-img {
+    max-width: 100%;
+    height: auto;
   }
 }
 .topnav {
@@ -6580,7 +6588,7 @@ h2 {
 }
 
 .site-footer {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4), 0 3px 10px 0 rgba(0, 0, 0, 0.38);
   box-sizing: border-box;
 }
 
@@ -6615,105 +6623,74 @@ h2 {
   font-size: 2rem;
 }
 
-/* Style for landing page with board and content*/
-.column-container {
-  width: 95%;
-  background-color: rgba(42, 41, 34, 0.87);
-  margin: auto;
-  padding: auto;
-  min-height: calc(100vh - 15em);
-  display: flex;
-  flex-flow: row wrap;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 1.6em;
-}
-
-.content-column {
-  padding-left: 2em;
-  padding-top: 2em;
-  flex: 50%;
+* {
+  font-family: "Lato", sans-serif;
   box-sizing: border-box;
 }
 
-.board-column {
-  padding-top: 2em;
-  flex: 50%;
+html {
+  font-size: 100%;
 }
 
-/* Clear float after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(250, 249, 247, 0.6);
+  font-family: "Abril Fatface", sans-serif;
+  font-weight: 350;
+  letter-spacing: 0.02em;
+  margin-block-end: 1em;
+}
+h1 h1,
+h2 h1,
+h3 h1,
+h4 h1,
+h5 h1,
+h6 h1 {
+  letter-spacing: 0.03em;
 }
 
-/* Responsive site and style for small devices */
-@media (max-width: 980px) {
-  body,
-.column-container,
-.site-header,
-.site-footer {
-    width: auto;
-  }
-}
-@media (max-width: 768px) {
-  .topnav {
-    clear: both;
-    padding: 0;
-  }
-
-  .topnav ul {
-    padding-bottom: 1em;
-  }
-
-  .topnav ul li {
-    display: block;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .topnav ul li a {
-    display: block;
-    padding: 0.5em 0;
-  }
-
-  .topnav a {
-    text-transform: uppercase;
-    font-size: 0.6em;
-  }
-
-  .sidebar {
-    display: none !important;
-  }
-
-  .board-column,
-.content-column,
-.content {
-    flex: 100%;
-    padding: 0.5em;
+@media (max-width: 650px) {
+  h1,
+h2 {
     margin: 0;
+    font-size: 1.2em;
   }
 }
-/* Images */
-@media (max-width: 768px) {
-  .me-img,
-.website-img,
-.avocado-img {
-    max-width: 100%;
-    height: auto;
+
+p {
+  font-size: 1.2em;
+  color: rgba(250, 249, 247, 0.87);
+  font-weight: 350;
+  line-height: 1.5;
+  width: 50ch;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+@media (max-width: 650px) {
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+    width: 35ch;
   }
 }
-/* Responisve report pages*/
-@media (min-width: 600px) {
-  .wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
+a {
+  text-decoration: none;
 }
-@media (min-width: 900px) {
-  .wrapper {
-    grid-template-columns: repeat(3, 1fr);
-  }
+
+ul {
+  list-style-type: none;
 }
+
+.box-h3 {
+  color: rgba(233, 141, 245, 0.87);
+  padding: 1em 0 0 1em;
+}
+
 /* Style for report page */
 .landingpage {
   display: grid;
@@ -6773,7 +6750,7 @@ h2 {
 }
 .wrapper {
   background-color: rgba(42, 41, 34, 0.87);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4), 0 3px 10px 0 rgba(0, 0, 0, 0.38);
   margin-bottom: 1.6em;
   max-width: 1200px;
   margin: 0 auto;
@@ -6810,27 +6787,12 @@ body {
   height: 100%;
 }
 
-h1 {
-  color: #fff;
-}
-
-p {
-  font-size: 1.2em;
-  color: rgba(250, 249, 247, 0.87);
-  font-weight: 350;
-  line-height: 1.5;
-  width: 50ch;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-}
-
 .topnav {
-  border-bottom: 2px solid #625d52;
+  border-bottom: 2px solid #423d33;
 }
 
 .topnav a {
   font-family: "Lato", sans-serif;
-  font-weight: 750;
   color: rgba(233, 141, 245, 0.87);
 }
 
@@ -6847,7 +6809,7 @@ p {
 }
 
 .kmom-box {
-  border: 1px solid #625d52;
+  border: 1px solid #423d33;
   background-color: #27241d;
 }
 
@@ -6856,11 +6818,6 @@ p {
   color: rgba(233, 141, 245, 0.87);
   font-weight: 350;
   background-color: #27241d;
-}
-
-.box-h3 {
-  color: rgba(233, 141, 245, 0.87);
-  padding: 1em 0 0 1em;
 }
 
 /* Test of Sass calculation */

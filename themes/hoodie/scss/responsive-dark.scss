@@ -1,0 +1,54 @@
+// Separate responsive scss for dark theme
+@mixin breakpoint($point) {
+    @if $point == papa-bear {
+        @media (max-width: 1600px) { @content; }
+    }
+    @else if $point == mama-bear {
+        @media (max-width: 1250px) { @content; }
+    }
+    @else if $point == baby-bear {
+        @media (max-width: 650px) { @content; }
+    }
+}
+
+/* Top navbar */
+@media (max-width: 768px) {
+    .topnav {
+        clear: both;
+        padding: $zero;
+    }
+
+    .topnav ul {
+        padding-bottom: 1em;
+    }
+
+    .topnav ul li {
+        display: block;
+        margin-left: $zero;
+        text-align: center;
+    }
+
+    .topnav ul li a {
+        display: block;
+        padding: 0.5em 0;
+    }
+
+    .topnav a {
+        text-transform: uppercase;
+        font-size: 0.6em;
+    }
+
+    .sidebar {
+        display: none !important;
+    }
+}
+
+/* Images */
+@media (max-width: 768px) {
+    .me-img,
+    .website-img,
+    .avocado-img {
+        max-width: 100%;
+        height: auto;
+    }
+}
