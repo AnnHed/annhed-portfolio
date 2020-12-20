@@ -6493,6 +6493,14 @@ readers do not read off random characters that represent icons */
   clear: both;
 }
 
+@media (max-width: 980px) {
+  body,
+.column-container,
+.site-header,
+.site-footer {
+    width: auto;
+  }
+}
 /* Top navbar */
 @media (max-width: 768px) {
   .topnav {
@@ -6517,13 +6525,23 @@ readers do not read off random characters that represent icons */
 
   .topnav a {
     text-transform: uppercase;
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
 
   .sidebar {
     display: none !important;
   }
 }
+@media (max-width: 650px) {
+  .board-column,
+.content-column,
+.content {
+    flex: 100%;
+    padding: 0.5em;
+    margin: 0;
+  }
+}
+
 /* Images */
 @media (max-width: 768px) {
   .me-img,
@@ -6531,6 +6549,17 @@ readers do not read off random characters that represent icons */
 .avocado-img {
     max-width: 100%;
     height: auto;
+  }
+}
+/* Responisve report pages*/
+@media (min-width: 600px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .topnav {
@@ -6638,18 +6667,24 @@ h3,
 h4,
 h5,
 h6 {
-  color: rgba(250, 249, 247, 0.6);
+  color: rgba(250, 249, 247, 0.87);
   font-family: "Abril Fatface", sans-serif;
   font-weight: 350;
   letter-spacing: 0.02em;
   margin-block-end: 1em;
 }
 h1 h1,
+h1 h2,
 h2 h1,
+h2 h2,
 h3 h1,
+h3 h2,
 h4 h1,
+h4 h2,
 h5 h1,
-h6 h1 {
+h5 h2,
+h6 h1,
+h6 h2 {
   letter-spacing: 0.03em;
 }
 
@@ -6673,8 +6708,9 @@ p {
 @media (max-width: 650px) {
   p {
     font-size: 1em;
-    line-height: 1.6;
+    line-height: 200%;
     width: 35ch;
+    padding-bottom: 1.5em;
   }
 }
 
@@ -6687,7 +6723,7 @@ ul {
 }
 
 .box-h3 {
-  color: rgba(233, 141, 245, 0.87);
+  color: rgba(233, 141, 245, 0.6);
   padding: 1em 0 0 1em;
 }
 
@@ -6815,7 +6851,7 @@ body {
 
 .kmom-title,
 .title-box {
-  color: rgba(233, 141, 245, 0.87);
+  color: rgba(233, 141, 245, 0.6);
   font-weight: 350;
   background-color: #27241d;
 }

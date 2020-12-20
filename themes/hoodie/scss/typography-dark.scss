@@ -13,13 +13,14 @@ h3,
 h4,
 h5,
 h6 {
-    color: $darkest-text;
+    color: $darker-text;
     font-family: $title-fonts;
     font-weight: $less-weight;
     letter-spacing: $letter-space;
     margin-block-end: $block-end;
 
-    h1 {
+    h1,
+    h2 {
         letter-spacing: $big-letter-space;
     }
 }
@@ -28,9 +29,18 @@ h1,
 h2 {
     @include breakpoint(baby-bear) {
         margin: $zero;
-        font-size: 1.2em;
+        // font-size: 1.2em;
+        padding-left: 0.5em; // No padding from start
     }
 }
+
+h3 {
+    @include breakpoint(baby-bear) {
+        padding-left: 0.5em;
+    }
+}
+
+
 
 p {
     font-size: $font-size;
@@ -43,8 +53,10 @@ p {
 
     @include breakpoint(baby-bear) {
         font-size: 1em;
-        line-height: 1.6;
+        line-height: 200%; // seize before 1.6 recommended
         width: $mobile-line-length;
+        padding-left: 0.5em; // No padding from start
+        padding-bottom: 1.5em; // Test space between paragraphs
     }
 }
 
@@ -59,6 +71,6 @@ ul {
 // Sidebar kmompages
 
 .box-h3 {
-    color: $dark-accent-color;
+    color: rgba(233, 141, 245, 0.6); // darker accent 60%
     padding: 1em 0 0 1em;
 }
